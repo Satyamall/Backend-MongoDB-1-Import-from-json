@@ -51,8 +51,9 @@ products>
   ......
   ....
 **Below Picture for above query**
--243
--244
+![Screenshot (243)](https://user-images.githubusercontent.com/80479635/153718640-9806a6a4-00d8-4fd6-978f-8261fb0715a3.png)
+![Screenshot (244)](https://user-images.githubusercontent.com/80479635/153718651-f75de415-b1d5-4bf0-bf5e-7443c77fc304.png)
+
 
 
 # 2. top 10 cheapest items
@@ -87,8 +88,9 @@ products>
   ......
   ....
 **Below Picture for above query**
--245
--246
+![Screenshot (245)](https://user-images.githubusercontent.com/80479635/153718661-ea399635-0590-46e5-a201-b0079233e8b9.png)
+![Screenshot (246)](https://user-images.githubusercontent.com/80479635/153718662-ca738546-61c0-41bb-b01e-611eac90518e.png)
+
 
 
 # 3. top items where qty remains in stock.
@@ -126,7 +128,7 @@ Type "it" for more
 1000
 
 **Below Picture for above query**
--247
+![Screenshot (247)](https://user-images.githubusercontent.com/80479635/153718668-6fd7bd4c-8726-42ed-9ce9-e44f48897257.png)
 
 
 # 4. top 10 rated products.
@@ -148,7 +150,8 @@ Type "it" for more
 ]
 
 **Below Picture for above query**
--248
+![Screenshot (248)](https://user-images.githubusercontent.com/80479635/153718678-6bd960cd-c936-457b-97d8-405cc2284f5b.png)
+
 
 
 # 5. bottom 10 rated products.
@@ -170,7 +173,7 @@ Type "it" for more
 ]
 
 **Below Picture for above query**
--249
+![Screenshot (249)](https://user-images.githubusercontent.com/80479635/153718684-c6ddeafd-b2ec-47c6-b1af-f9c791c8d299.png)
 
 
 # 6. from 11-20 top rated products.
@@ -192,7 +195,8 @@ Type "it" for more
 ]
 
 **Below Picture for above query**
--250
+![Screenshot (250)](https://user-images.githubusercontent.com/80479635/153718694-d9c67bab-4dd3-4e78-b0ac-02a8be52b865.png)
+
 
 
 # 7. find products with rating between 3 and 4, and sorted from descending order of rating, if the ratings are same, then show the alphabetic order of name of the product.
@@ -231,5 +235,9 @@ Type "it" for more
   ......
   ....
 **Below Picture for above query**
--251
--252
+![Screenshot (251)](https://user-images.githubusercontent.com/80479635/153718717-dcf4898b-8c07-4eca-9ea6-dd9537334edf.png)
+![Screenshot (252)](https://user-images.githubusercontent.com/80479635/153718735-6626846b-e87f-4943-8502-e77e973c8a6b.png)
+
+
+
+
