@@ -1,9 +1,12 @@
 
 # To import products.json in mongoDB
--mongoimport --db products --collection items --file products.json --port 27017  --jsonArray
-
+```js
+mongoimport --db products --collection items --file products.json --port 27017  --jsonArray
+```
 #  show dbs
-
+```js
+show dbs
+```
 admin       41 kB
 airbnb    54.7 MB
 config    36.9 kB
@@ -13,7 +16,9 @@ movies     123 kB
 products   106 kB
 
 # use products as database
-- use products
+```js
+use products
+```
 switched to db products
 products> show collections
 items
@@ -21,9 +26,9 @@ products>
 
 
 # 1. top 10 purchased items
-
-- db.items.find({}).sort({no_of_purchases: -1}).limit(10)
-
+```js
+db.items.find({}).sort({no_of_purchases: -1}).limit(10)
+```
 **Output->**
 [
   {
@@ -57,9 +62,9 @@ products>
 
 
 # 2. top 10 cheapest items
-
--  db.items.find({}).sort({price: 1}).limit(10)
-
+```js
+db.items.find({}).sort({price: 1}).limit(10)
+```
 **Output->**
 [
   {
@@ -94,9 +99,9 @@ products>
 
 
 # 3. top items where qty remains in stock.
-
-- db.items.find({},{qty_left: 1}).sort({price: -1})
-
+```js
+db.items.find({},{qty_left: 1}).sort({price: -1})
+```
 **Output->**
 [
   { _id: ObjectId("6207cf3c18ceb84167447f0e"), qty_left: 990 },
@@ -122,8 +127,9 @@ products>
 ]
 Type "it" for more
 
-- db.items.find({},{qty_left: 1}).sort({price: -1}).count()
-
+```js
+db.items.find({},{qty_left: 1}).sort({price: -1}).count()
+```
 **output->**
 1000
 
@@ -132,9 +138,9 @@ Type "it" for more
 
 
 # 4. top 10 rated products.
-
-- db.items.find({},{product_rating: 1}).sort({product_rating: -1}).limit(10)
-
+```js
+db.items.find({},{product_rating: 1}).sort({product_rating: -1}).limit(10)
+```
 **Output->**
 [
   { _id: ObjectId("6207cf3c18ceb84167447cf5"), product_rating: 10 },
@@ -155,9 +161,9 @@ Type "it" for more
 
 
 # 5. bottom 10 rated products.
-
-- db.items.find({},{product_rating: 1}).sort({product_rating: 1}).limit(10)
-
+```js
+db.items.find({},{product_rating: 1}).sort({product_rating: 1}).limit(10)
+```
 **Output->**
 [
   { _id: ObjectId("6207cf3c18ceb84167447d02"), product_rating: 1 },
@@ -177,9 +183,9 @@ Type "it" for more
 
 
 # 6. from 11-20 top rated products.
-
-- db.items.find({},{product_rating: 1}).sort({product_rating: -1}).limit(10).skip(10)
-
+```js
+db.items.find({},{product_rating: 1}).sort({product_rating: -1}).limit(10).skip(10)
+```
 **Output->**
 [
   { _id: ObjectId("6207cf3c18ceb84167447d48"), product_rating: 10 },
@@ -200,13 +206,14 @@ Type "it" for more
 
 
 # 7. find products with rating between 3 and 4, and sorted from descending order of rating, if the ratings are same, then show the alphabetic order of name of the product.
-
-- db.items.find({product_rating: {$in:[3,4]}}).sort({product_rating: -1,product_name: 1}).count()
-
+```js
+db.items.find({product_rating: {$in:[3,4]}}).sort({product_rating: -1,product_name: 1}).count()
+```
 **Output->** 222
 
-- db.items.find({product_rating: {$in:[3,4]}}).sort({product_rating: -1,product_name: 1})
-
+```js
+db.items.find({product_rating: {$in:[3,4]}}).sort({product_rating: -1,product_name: 1})
+```
 **Output->**
 [
   {
